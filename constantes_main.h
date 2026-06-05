@@ -21,8 +21,10 @@
 #define HOTKEY_SALIR_PRINCIPAL 'Q'
 #define HOTKEY_SALIR_BUSQUEDA 'V'
 
-#define TITULO_PRINCIPAL "   ______      __          __                    __        ____        __    __                        __\n  / ____/___  / /__  _____/ /_____  _____   ____/ /__     / __ \\____  / /___/_/ ____ ___  ____  ____  / /\n / /   / __ \\/ / _ \\/ ___/ __/ __ \\/ ___/  / __  / _ \\   / /_/ / __ \\/ //_/ _ \\/ __ `__ \\/ __ \\/ __ \\/ / \n/ /___/ /_/ / /  __/ /__/ /_/ /_/ / /     / /_/ /  __/  / ____/ /_/ / ,< /  _ ́/ / / / / / /_/ / / / /_/  \n\\____/\\____/_/\\___/\\___/\\__/\\____/_/      \\__,_/\\___/  /_/    \\____/_/|_|\\___/_/ /_/ /_/\\____/_/ /_(_)   \n"
-#define TITULO_BUSQUEDA "    ____                            \n   / __ )__  ________________ ______\n  / __  / / / / ___/ ___/ __ `/ ___/\n / /_/ / /_/ (__  ) /__/ /_/ / /    \n/_____/\\__,_/____/\\___/\\__,_/_/     \n                                    "
+#define TITULO_PRINCIPAL \
+	"   ______      __          __                    __        ____        __    __                        __\n  / ____/___  / /__  _____/ /_____  _____   ____/ /__     / __ \\____  / /___/_/ ____ ___  ____  ____  / /\n / /   / __ \\/ / _ \\/ ___/ __/ __ \\/ ___/  / __  / _ \\   / /_/ / __ \\/ //_/ _ \\/ __ `__ \\/ __ \\/ __ \\/ / \n/ /___/ /_/ / /  __/ /__/ /_/ /_/ / /     / /_/ /  __/  / ____/ /_/ / ,< /  _ ́/ / / / / / /_/ / / / /_/  \n\\____/\\____/_/\\___/\\___/\\__/\\____/_/      \\__,_/\\___/  /_/    \\____/_/|_|\\___/_/ /_/ /_/\\____/_/ /_(_)   \n"
+#define TITULO_BUSQUEDA \
+	"    ____                            \n   / __ )__  ________________ ______\n  / __  / / / / ___/ ___/ __ `/ ___/\n / /_/ / /_/ (__  ) /__/ /_/ / /    \n/_____/\\__,_/____/\\___/\\__,_/_/     \n                                    "
 #define MARCADOR_OPCION "▢"
 #define PROPUESTA_OPCION "Ingrese una opción:"
 
@@ -62,19 +64,33 @@
 #define ABREVIACION_PSIQUICO "PSI"
 #define ABREVIACION_LUCHA "LUCH"
 
-#define MSJ_INSTRUCCIONES "El modo de uso es \033[38;5;223m./tp2 [nombre del archivo]\033[0m.\n\nVuelva a correr el programa por terminal, asegurándose de utilizar la estructura indicada.\n\n"
-#define MSJ_ERR_LECTURA "\033[38;5;202;1mERROR\033[0m: Ocurrió un error al leer el archivo. Por favor, vuelva a intentar. Se debe incluír la extensión del archivo al ejecutar el programa.\n"
-#define MSJ_ERR_DICCIONARIO "\033[38;5;202;1mERROR\033[0m: Ocurrió un error al crear el diccionario. Por favor, vuelva a intentar.\n"
-#define MSJ_ERR_RELLENAR_DICCIONARIO "\033[38;5;202;1mERROR\033[0m: Ocurrió un error al rellenar el diccionario. Por favor, vuelva a intentar.\n"
-#define MSJ_ERR_INICIALIZACION_MENU "\033[38;5;202;1mERROR\033[0m: Ocurrió un error al inicializar los menús. Por favor, vuelva a intentar.\n"
-#define MSJ_AVISO_SEMILLA_MUY_GRANDE "\033[38;5;222;1mAVISO\033[0m: La semilla ingresada excede el rango máximo. Se inicializará el juego con un semilla elegida al azar.\n\n"
-#define MSJ_AVISO_POKEMON_NO_PRESENTE "\033[38;5;222;1mAVISO\033[0m: El Pokémon buscado no está presente en la Pokédex.\n\n" 
-#define MSJ_AVISO_TIPO_NO_PRESENTE "\033[38;5;222;1mAVISO\033[0m: No hay Pokémon del tipo buscado en la Pokédex.\n\n" 
-#define MSJ_AVISO_POKEDEX_VACIA "\033[38;5;222;1mAVISO\033[0m: La Pokédex cargada desde el archivo está vacía. Se terminará la ejecución del programa."
-#define MSJ_DATOS "\n\033[38;5;223;1mDATOS DEL POKÉMON: \n\033[0m\033[38;5;223mNOMBRE:\033[0m %s\n\033[38;5;223mTIPO:\033[0m %s\n\033[38;5;223mATAQUE:\033[0m %i\n\033[38;5;223mDEFENSA:\033[0m %i\n\033[38;5;223mVELOCIDAD:\033[0m %i\n"
+#define MSJ_INSTRUCCIONES \
+	"El modo de uso es \033[38;5;223m./tp2 [nombre del archivo]\033[0m.\n\nVuelva a correr el programa por terminal, asegurándose de utilizar la estructura indicada.\n\n"
+#define MSJ_ERR_LECTURA \
+	"\033[38;5;202;1mERROR\033[0m: Ocurrió un error al leer el archivo. Por favor, vuelva a intentar. Se debe incluír la extensión del archivo al ejecutar el programa.\n"
+#define MSJ_ERR_DICCIONARIO \
+	"\033[38;5;202;1mERROR\033[0m: Ocurrió un error al crear el diccionario. Por favor, vuelva a intentar.\n"
+#define MSJ_ERR_RELLENAR_DICCIONARIO \
+	"\033[38;5;202;1mERROR\033[0m: Ocurrió un error al rellenar el diccionario. Por favor, vuelva a intentar.\n"
+#define MSJ_ERR_INICIALIZACION_MENU \
+	"\033[38;5;202;1mERROR\033[0m: Ocurrió un error al inicializar los menús. Por favor, vuelva a intentar.\n"
+#define MSJ_AVISO_SEMILLA_MUY_GRANDE \
+	"\033[38;5;222;1mAVISO\033[0m: La semilla ingresada excede el rango máximo. Se inicializará el juego con un semilla elegida al azar.\n\n"
+#define MSJ_AVISO_POKEMON_NO_PRESENTE \
+	"\033[38;5;222;1mAVISO\033[0m: El Pokémon buscado no está presente en la Pokédex.\n\n"
+#define MSJ_AVISO_TIPO_NO_PRESENTE \
+	"\033[38;5;222;1mAVISO\033[0m: No hay Pokémon del tipo buscado en la Pokédex.\n\n"
+#define MSJ_AVISO_POKEDEX_VACIA \
+	"\033[38;5;222;1mAVISO\033[0m: La Pokédex cargada desde el archivo está vacía. Se terminará la ejecución del programa."
+#define MSJ_DATOS \
+	"\n\033[38;5;223;1mDATOS DEL POKÉMON: \n\033[0m\033[38;5;223mNOMBRE:\033[0m %s\n\033[38;5;223mTIPO:\033[0m %s\n\033[38;5;223mATAQUE:\033[0m %i\n\033[38;5;223mDEFENSA:\033[0m %i\n\033[38;5;223mVELOCIDAD:\033[0m %i\n"
 
 #define PROPUESTA_INGRESAR_NOMBRE "\nIngrese el nombre del Pokémon a buscar:"
-#define PROPUESTA_INGRESAR_TIPO "\nIngrese el nombre del tipo a buscar (ELEC, FUEG, PLAN, AGUA, NORM, FANT, PSI, LUCH):"
-#define PROPUESTA_INGRESAR_SEMILLA "\nIngrese la semilla con la que desea jugar:"
+#define PROPUESTA_INGRESAR_TIPO \
+	"\nIngrese el nombre del tipo a buscar (ELEC, FUEG, PLAN, AGUA, NORM, FANT, PSI, LUCH):"
+#define PROPUESTA_INGRESAR_SEMILLA \
+	"\nIngrese la semilla con la que desea jugar:"
+
+#define INDICE_ARGUMENTO_ARCHIVO 1
 
 #endif // __CONSTANTES_MAIN_H__
